@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Global Styles */
+:root {
+  --primary-color:#668dd2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  background: rgb(224, 224, 224);
+}
+
+
+
+.contact-wrap {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-in {
+  padding: 40px 30px;
+}
+
+.contact-in:nth-child(1) {
+  flex: 30%;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.contact-in:nth-child(2) {
+  flex: 45%;
+  background: #fff;
+  color: #111;
+}
+
+.contact-in:nth-child(3) {
+  flex: 25%;
+  background: #fff;
+  padding: 0;
+}
+
+.contact-in h1 {
+  font-size: 1.5rem ;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+.contact-in h2 {
+  font-size: 1.5rem ;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-in h2 i {
+  color: #fff;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50px;
+  line-height: px;
+  text-align: center;
+}
+
+.contact-in h2 i:hover {
+  transform: scale(1.1);
+}
+
+.contact-in p {
+  font-size: 0.875rem;
+  font-weight: 400;;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.contact-in ul li  {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.contact-in ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  /* background: #fff;
+  border-radius: 50px; */
+}
+
+.contact-in ul li a {
+  font-size: 0.875rem;
+  line-height: 30px;
+  color: #fff;
+}
+
+
+/* Making the icons bigger when you hover over them. */
+.contact-in ul li a:hover {
+  transform: scale(1.1);
+}
+
+/* Making the icons smaller when you click on them. */
+.contact-in ul li a:active {
+  transform: scale(1);
+}
+
+
+.contact-in form {
+  width: 100%;
+  height: auto;
+}
+
+.contact-in-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.625rem;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.contact-in-textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.625rem;
+  /* padding: 10px 0 0 10px; */
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+/* Making the border of the input and textarea change to the primary color when you click on it. */
+input:focus, 
+textarea:focus {
+  border: 1px solid var(--primary-color) ;
+  border-bottom-width: 5px solid var(--primary-color);
+}
+
+/* Making the input and textarea bigger when you hover over them. */
+input:hover,
+textarea:hover {
+  transform: scale(1.01);
+}
+
+
+.contact-in iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Buttons */
+.contact-in-btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 0.625em;
+  cursor: pointer;
+}
+
+.contact-in-btn:hover {
+
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 360px) {
+  contact-in:nth-child(1) {
+    flex: 50%;
+  }
+  
+  .contact-in:nth-child(2) {
+    flex: 50%;
+  }
+  
+  .contact-in:nth-child(3) {
+    flex: 100%;
+  }
+}
