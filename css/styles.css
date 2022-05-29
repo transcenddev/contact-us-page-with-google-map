@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color:#668dd2;
+  --primary-color:#7195d3;
 }
 
 * {
@@ -15,12 +15,9 @@
 body {
   height: 100vh;
   display: grid;
-  align-items: center;
+  place-items: center;
   font-family: "Inter", sans-serif;
-  background: rgb(224, 224, 224);
 }
-
-
 
 .contact-wrap {
   width: 80%;
@@ -28,6 +25,7 @@ body {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .contact-in {
@@ -55,14 +53,13 @@ body {
 .contact-in h1 {
   font-size: 1.5rem ;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-
 .contact-in h2 {
-  font-size: 1.5rem ;
+  font-size: 1.3rem ;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .contact-in h2 i {
@@ -72,10 +69,11 @@ body {
   height: 40px;
   margin-right: 10px;
   border-radius: 50px;
-  line-height: px;
+  line-height: 30px;
   text-align: center;
 }
 
+/* Making the icons bigger when you hover over them. */
 .contact-in h2 i:hover {
   transform: scale(1.1);
 }
@@ -107,19 +105,20 @@ body {
   font-size: 0.875rem;
   line-height: 30px;
   color: #fff;
+  
 }
 
-
-/* Making the icons bigger when you hover over them. */
+/* When the mouse is hover, Make a a white circle background with shadow */
 .contact-in ul li a:hover {
-  transform: scale(1.1);
+  background: #fff;
+  border-radius: 50px;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* Making the icons smaller when you click on them. */
 .contact-in ul li a:active {
-  transform: scale(1);
+  transform: scale(0.9);
 }
-
 
 .contact-in form {
   width: 100%;
@@ -180,16 +179,13 @@ textarea:hover {
   border-radius: 5px;
   font-size: 1rem;
   font-family: "Inter";
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 2px;
   width: 100%;
   padding: 0.625em;
   cursor: pointer;
 }
 
-.contact-in-btn:hover {
-
-}
 
 
 /* Media Queries */
