@@ -165,7 +165,6 @@ textarea:hover {
   transform: scale(1.01);
 }
 
-
 .contact-in iframe {
   width: 100%;
   height: 100%;
@@ -186,8 +185,9 @@ textarea:hover {
   cursor: pointer;
 }
 
-
-
+.contact-in-btn:active {
+  opacity: 0.8;
+}
 /* Media Queries */
 
 @media only screen and (max-width: 360px) {
